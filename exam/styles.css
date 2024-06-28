@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+}
+
+.text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.logo-img {
+    height: 200px;
+    margin: 42px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    color: #333;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.ui.menu .ui.container {
+    display: flex;
+    justify-content: center;
+    
+    position: relative;
+}
+
+#nav-links {
+    display: flex;
+    justify-content: center;
+    
+    width: 100%;
+}
+
+#nav-links .item {
+    border: none !important;
+    padding: 5 15px !important;
+    width: 150px;
+    justify-content: center;
+}
+
+#dropdown-menu {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    #nav-links {
+        display: none;
+    }
+
+    #dropdown-menu {
+        display: block;
+    }
+
+    .ui.menu .ui.container {
+        justify-content: flex-end;
+    }
+}
+
+.ui.segment:last-child {
+    margin-bottom: 20px;
+}
+
+.ui.footer {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 20 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ui.vertical.footer.segment {
+    position: flex;
+    bottom: 0;
+    background-color: #fff;
+    right: 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ui.inverted.header {
+    color: #333;
+}
+
+.ui.inverted.link.list .item,
+.ui.inverted.link.list .item a:not(.ui),
+.ui.inverted.link.list a.item {
+    color: #555 !important;
+}
+
+.ui.grid {
+    justify-content: center;
+}

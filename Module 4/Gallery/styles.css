@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ccc;
+}
+
+.gallery-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#galleryImage {
+    max-width: 400px;
+    max-height: 400px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.button-arrow {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: relative;
+}
+
+.button-arrow::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 12px solid #333;
+    left: 10px;
+}
+
+.button-arrow.prev::before {
+    border-right: 12px solid transparent;
+    border-left: 12px solid #333;
+    right: 5px;
+}
+
+.button-arrow.next::before {
+    border-left: 12px solid transparent;
+    border-right: 12px solid #333;
+    left: 5px;
+}

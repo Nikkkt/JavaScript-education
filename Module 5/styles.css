@@ -1,0 +1,51 @@
+body {
+    margin: 20px;
+    background-color: #fff3be;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #816c0f;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+li strong {
+    display: block;
+}
+
+li em {
+    display: block;
+    color: #eee;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #816c0f;
+    color: #fff;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+}
+
+button:hover { 
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7); 
+} 
+
+input {
+    border-radius: 5px;
+    height: 20px;
+}
+
+textarea {
+    border-radius: 5px;
+}

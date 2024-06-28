@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+
+    <h2>Create new color</h2>
+    <form id="colorForm">
+        <label for="colorName">Name</label>
+        <input type="text" id="colorName" name="colorName" required>
+        <span id="colorNameError" class="error"></span><br>
+
+        <label for="colorType">Type</label>
+        <select id="colorType" name="colorType" required>
+            <option value="RGB">RGB</option>
+            <option value="RGBA">RGBA</option>
+            <option value="HEX">HEX</option>
+        </select><br>
+
+        <label for="colorCode">Color Code</label>
+        <input type="text" id="colorCode" name="colorCode" required>
+        <span id="colorCodeError" class="error"></span><br>
+
+        <button type="submit">Save Color</button>
+    </form>
+
+    <h1>Colors</h1>
+    <div id="colorPalette"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
